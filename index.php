@@ -25,8 +25,14 @@ include('remember.php');
       
   </head>
   <body>
-    <!--Navigation Bar-->  
-    
+    <!--Navigation Bar-->   
+    <?php
+    if(isset($_SESSION["user_id"])){
+        include("navigationbarconnected.php");
+    }else{
+        include("navigationbarnotconnected.php");
+    }  
+    ?>
     
       <div class="container-fluid" id="myContainer">
           <div class="row">
