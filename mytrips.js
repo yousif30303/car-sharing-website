@@ -276,35 +276,7 @@ $(function(){
         );
     }
     
-    function submitEditTripRequest(){
-        console.log(data);
-        $.ajax({
-            url: "updatetrips.php",
-            data: data,
-            type: "POST",
-            success: function(data2){
-                console.log(data);
-                if(data2){
-                    $('#result2').html(data2);
-                    $("#spinner").css("display", "none");
-                    $("#result2").slideDown();
-                }else{
-                    getTrips();
-                    $("#result2").hide();
-                    $('#edittripModal').modal('hide');
-                    $("#spinner").css("display", "none");
-                    //empty form
-                    $('#edittripform')[0].reset();
-                }
-        },
-            error: function(){
-                $("#result2").html("<div class='alert alert-danger'>There was an error with the Ajax Call. Please try again later.</div>");
-                $("#spinner").css("display", "none");
-                $("#result2").fadeIn();
 
-    }
-        }); 
-    }
     
     
 
