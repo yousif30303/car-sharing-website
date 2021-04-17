@@ -1,4 +1,4 @@
-//create a geocoder object to use the geocode
+///create a geocoder object to use the geocode
 var geocoder = new google.maps.Geocoder();
 var data;
 

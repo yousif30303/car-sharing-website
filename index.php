@@ -233,7 +233,7 @@ include('remember.php');
     <!-- Footer-->
       <div class="footer">
           <div class="container">
-              <p>yousif Copyright &copy; 2020-<?php $today = date("Y"); echo $today?>.</p>
+          <p>Yousif Osman Copyright &copy; <?php $today = date("Y"); echo $today?>.</p>
           </div>
       </div>
       

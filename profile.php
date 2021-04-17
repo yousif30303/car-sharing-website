@@ -14,7 +14,7 @@ $result = mysqli_query($link, $sql);
 $count = mysqli_num_rows($result);
 
 if($count == 1){
-    $row = mysqli_fetch_array($result, MYSQL_ASSOC); 
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
     $username = $row['username'];
     $email = $row['email']; 
     $picture = $row['profilepicture'];
@@ -323,7 +323,7 @@ if($count == 1){
     <!-- Footer-->
       <div class="footer">
           <div class="container">
-              <p>DevelopmentIsland.com Copyright &copy; 2015-<?php $today = date("Y"); echo $today?>.</p>
+          <p>Yousif Osman Copyright &copy; <?php $today = date("Y"); echo $today?>.</p>
           </div>
       </div>
       <!--Spinner-->
